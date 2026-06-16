@@ -1,0 +1,123 @@
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--accent-color);
+	margin: 0;
+	letter-spacing: -0.03em;
+}
+
+.buttonGroup {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.downloadButton {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	background: #10b981;
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border-radius: 6px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.downloadButton:hover {
+	background: #059669;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.openButton {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	background: var(--accent-color);
+	color: var(--bg-color);
+	padding: 0.75rem 1.5rem;
+	border-radius: 6px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.openButton:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(34, 211, 238, 0.3);
+}
+
+.iframeContainer {
+	flex: 1;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 12px;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	min-height: 600px;
+}
+
+.iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	min-height: 600px;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		padding: 1rem;
+	}
+
+	.header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.title {
+		font-size: 1.75rem;
+	}
+
+	.buttonGroup {
+		width: 100%;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.downloadButton,
+	.openButton {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.iframeContainer {
+		min-height: 500px;
+	}
+
+	.iframe {
+		min-height: 500px;
+	}
+}
