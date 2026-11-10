@@ -1,5 +1,5 @@
 export interface Article {
-  id: string;
+  id: number;
   title: string;
   description: string;
   cover_image: string;
@@ -16,6 +16,7 @@ export interface Project {
   link: string;
   slug: string;
   tags?: string[];
+  caseStudy?: string;
 }
 
 export interface Repo {

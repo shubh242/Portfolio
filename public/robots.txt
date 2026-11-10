@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shubhsanghvi.vercel.app/sitemap.xml

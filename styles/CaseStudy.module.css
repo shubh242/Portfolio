@@ -1,0 +1,14 @@
+.article { max-width: 780px; margin: 0 auto; font-family: 'Source Sans Pro', system-ui, sans-serif; }
+.back { display: inline-flex; align-items: center; gap: .5rem; color: var(--accent-color); font-size: 1rem; min-height: 44px; }
+.back:hover, .source:hover { text-decoration: underline; }
+.header { padding: 2rem 0; border-bottom: 1px solid var(--explorer-border); }
+.eyebrow { font: .85rem/1.6 'JetBrains Mono', monospace; color: var(--accent-color); margin-bottom: 1rem; }
+.header h1 { font: 700 clamp(1.9rem, 3.5vw, 3rem)/1.15 system-ui, sans-serif; letter-spacing: -.035em; text-wrap: balance; }
+.summary { font-size: 1.2rem; line-height: 1.7; margin: 1.5rem 0; }
+.focus { font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; }
+.source { display: inline-flex; align-items: center; gap: .5rem; padding: .75rem 1rem; border: 1px solid var(--accent-color); border-radius: 5px; color: var(--accent-color); font-size: 1rem; }
+.section { padding-top: 2rem; }
+.section h2, .footer h2 { font: 600 1.4rem/1.35 system-ui, sans-serif; letter-spacing: -.02em; }
+.section p, .footer p { font-size: 1.1rem; line-height: 1.85; margin-top: .9rem; }
+.footer { margin-top: 2.5rem; padding: 2rem 0; border-top: 1px solid var(--explorer-border); }
+.footer .back { margin-top: 1rem; }
