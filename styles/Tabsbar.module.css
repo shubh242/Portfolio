@@ -14,3 +14,8 @@
   .more > div { position: absolute; right: .5rem; top: 100%; min-width: 165px; border: 1px solid var(--accent-color); background: var(--article-bg); border-radius: 0 0 6px 6px; padding: .5rem; }
   .more a { display: block; color: var(--text-color); padding: .75rem; }
 }
+@media (max-width: 360px) {
+  .mobile { padding-inline: .2rem; }
+  .mobile > a, .more summary { padding-inline: .125rem; }
+  .more summary::after { margin-left: .125rem; }
+}
